@@ -31,21 +31,39 @@ h1 {
 }
 
 #clickButton {
-  background: none;
   border: none;
+  background: none;
   padding: 0;
   cursor: pointer;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto; /* Centering the button */
 }
 
 #cookieImage {
   width: 100px; 
   height: 100px;
-  display: block;
-  margin: 0 auto;
+  pointer-events: none;
+  transition: transform 0.2s ease-in-out; /* Smooth transition for the bounce */
 }
 
-#clickButton:hover #cookieImage {
-  transform: scale(1.1); 
+#clickButton:active #cookieImage {
+  animation: bounce 0.2s ease-in-out; /* Bounce animation */
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #upgrades {
