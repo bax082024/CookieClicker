@@ -7,8 +7,8 @@ const clickButton = document.getElementById('clickButton');
 const upgradeButton = document.getElementById('upgradeButton');
 const upgradeCostE1 = document.getElementById('upgradeCost');
 
-function updateCookieCount () {
-  cookieCountE1.textContent = 'Cookies: ${totalCookies}';
+function updateCookieCount() {
+  cookieCountE1.textContent = `Cookies: ${totalCookies}`; // Use backticks here
 }
 
 clickButton.addEventListener('click', () => {
@@ -23,7 +23,7 @@ upgradeButton.addEventListener('click', () => {
     upgradeCost += 10;
 
     updateCookieCount();
-    upgradeCostE1.textContent = upgradeCost; 
+    upgradeCostE1.textContent = upgradeCost;
   } else {
     alert('Not enough cookies to upgrade!');
   }
