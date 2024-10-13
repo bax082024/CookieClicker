@@ -38,14 +38,14 @@ h1 {
 }
 
 #cookieImage {
-  width: 100px; /* You can adjust the size */
+  width: 100px; 
   height: 100px;
   display: block;
   margin: 0 auto;
 }
 
 #clickButton:hover #cookieImage {
-  transform: scale(1.1); /* Add a zoom effect when hovering */
+  transform: scale(1.1); 
 }
 
 #upgrades {

@@ -8,7 +8,7 @@ const upgradeButton = document.getElementById('upgradeButton');
 const upgradeCostE1 = document.getElementById('upgradeCost');
 
 function updateCookieCount() {
-  cookieCountE1.textContent = `Cookies: ${totalCookies}`; // Use backticks here
+  cookieCountE1.textContent = `Cookies: ${totalCookies}`; 
 }
 
 clickButton.addEventListener('click', () => {

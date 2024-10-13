@@ -1,4 +1,5 @@
 # Cookie Clicker
 
 
-## Nom Nom
+## Introduction
+- Cookie clicker, doesnt everyone make one?
