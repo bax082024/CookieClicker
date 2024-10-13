@@ -55,3 +55,6 @@ h1 {
   cursor: pointer;
 }
 
+#upgradeButton:hover {
+  background-color: #45a049;
+}
