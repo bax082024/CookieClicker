@@ -44,3 +44,14 @@ h1 {
 #upgrades {
   margin-top: 20px;
 }
+
+#upgradeButton {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
