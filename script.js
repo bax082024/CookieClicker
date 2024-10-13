@@ -14,6 +14,14 @@ function updateCookieCount() {
 clickButton.addEventListener('click', () => {
   totalCookies += cookiesPerClick;
   updateCookieCount();
+
+  const flashNumber = document.getElementById('flashNumber');
+  flashNumber.textContent = `+${cookiesPerClick}`;
+  flashNumber.classList.remove('hidden');
+
+  setTimeout(() => {
+    flashNumber.classList.add('hidden');
+  }, 1000);
 });
 
 upgradeButton.addEventListener('click', () => {

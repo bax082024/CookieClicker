@@ -65,3 +65,29 @@ h1 {
 #upgradeButton:hover {
   background-color: #45a049;
 }
+
+#flashNumber {
+  font-size: 2rem;
+  color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; 
+  animation: fade-out 1s forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -80%);
+  }
+}
