@@ -10,3 +10,8 @@ const upgradeCostE1 = document.getElementById('upgradeCost');
 function updateCookieCount () {
   cookieCountE1.textContent = 'Cookies: ${totalCookies}';
 }
+
+clickButton.addEventListener('click', () => {
+  totalCookies += cookiesPerClick;
+  updateCookieCount();
+})
