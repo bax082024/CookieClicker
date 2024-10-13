@@ -14,4 +14,19 @@ function updateCookieCount () {
 clickButton.addEventListener('click', () => {
   totalCookies += cookiesPerClick;
   updateCookieCount();
-})
+});
+
+upgradeButton.addEventListener('click', () => {
+  if (totalCookies >= upgradeCost) {
+    totalCookies -= upgradeCost;
+    cookiesPerClick += 1;
+    upgradeCost += 10;
+
+    updateCookieCount();
+    upgradeCostE1.textContent = upgradeCost; 
+  } else {
+    alert('Not enough cookies to upgrade!');
+  }
+});
+
+updateCookieCount();
